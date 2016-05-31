@@ -94,6 +94,9 @@
     <EmbeddedResource Include="kwadrat.resx">
       <DependentUpon>kwadrat.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="okrag.resx">
+      <DependentUpon>okrag.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

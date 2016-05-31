@@ -16,5 +16,29 @@ namespace Projekt2
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double r;
+            double pi = Math.PI;
+            r = double.Parse(textBox1.Text);
+            textBox3.Text = (pi * r).ToString(); 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            double r;
+            double pi = Math.PI;
+            
+            r = double.Parse(textBox2.Text);
+            textBox3.Text = ((2 * pi) * r).ToString(); 
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            figury f = new figury();
+            f.Show();
+        }
     }
 }
