@@ -109,6 +109,9 @@
     <EmbeddedResource Include="prostokat.resx">
       <DependentUpon>prostokat.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="rownoleglobok.resx">
+      <DependentUpon>rownoleglobok.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="trapez.resx">
       <DependentUpon>trapez.cs</DependentUpon>
     </EmbeddedResource>
