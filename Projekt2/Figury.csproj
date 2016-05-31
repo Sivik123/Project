@@ -106,6 +106,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="prostokat.resx">
+      <DependentUpon>prostokat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="trojkat.resx">
       <DependentUpon>trojkat.cs</DependentUpon>
     </EmbeddedResource>
