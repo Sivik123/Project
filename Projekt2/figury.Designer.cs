@@ -34,11 +34,18 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.plikToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oProgramieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(12, 21);
+            this.button2.Location = new System.Drawing.Point(40, 27);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(69, 59);
             this.button2.TabIndex = 0;
@@ -48,7 +55,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(84, 21);
+            this.button3.Location = new System.Drawing.Point(267, 27);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(69, 59);
             this.button3.TabIndex = 1;
@@ -58,7 +65,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(84, 86);
+            this.button4.Location = new System.Drawing.Point(267, 132);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(69, 60);
             this.button4.TabIndex = 2;
@@ -68,7 +75,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(12, 86);
+            this.button5.Location = new System.Drawing.Point(40, 132);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(69, 60);
             this.button5.TabIndex = 3;
@@ -78,7 +85,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(84, 152);
+            this.button6.Location = new System.Drawing.Point(267, 232);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(69, 60);
             this.button6.TabIndex = 4;
@@ -88,7 +95,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(12, 152);
+            this.button7.Location = new System.Drawing.Point(40, 232);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(69, 60);
             this.button7.TabIndex = 5;
@@ -96,18 +103,76 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(130, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(111, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Proszę Wybrać Figurę";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.plikToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(380, 24);
+            this.menuStrip1.TabIndex = 8;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // plikToolStripMenuItem
+            // 
+            this.plikToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitToolStripMenuItem});
+            this.plikToolStripMenuItem.Name = "plikToolStripMenuItem";
+            this.plikToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.plikToolStripMenuItem.Text = "Plik";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.oProgramieToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.helpToolStripMenuItem.Text = "Pomoc";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // oProgramieToolStripMenuItem
+            // 
+            this.oProgramieToolStripMenuItem.Name = "oProgramieToolStripMenuItem";
+            this.oProgramieToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.oProgramieToolStripMenuItem.Text = "O Programie";
+            this.oProgramieToolStripMenuItem.Click += new System.EventHandler(this.oProgramieToolStripMenuItem_Click);
+            // 
             // figury
             // 
             this.ClientSize = new System.Drawing.Size(380, 329);
+            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "figury";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Figury";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -120,6 +185,12 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem plikToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem oProgramieToolStripMenuItem;
     }
 }
 

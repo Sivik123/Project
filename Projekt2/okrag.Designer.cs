@@ -145,6 +145,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "okrag";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "okrag";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();

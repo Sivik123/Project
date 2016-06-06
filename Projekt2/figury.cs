@@ -59,6 +59,30 @@ namespace Projekt2
             t.ShowDialog();
         }
 
+        private void toolStripTextBox1_Click(object sender, EventArgs e)
+        {
+            figury box = new figury();
+            box.ShowDialog();
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void oProgramieToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Program ma za zadanie obliczenie podstawowych obliczen podanych figur By: Robert Myćka");
+               
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+     
+
    
     }
 }

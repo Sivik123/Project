@@ -235,6 +235,7 @@
             this.Controls.Add(this.textBox42);
             this.Controls.Add(this.button3);
             this.Name = "trojkat";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);

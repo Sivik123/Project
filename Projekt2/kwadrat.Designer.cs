@@ -184,6 +184,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "kwadrat";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "kwadrat";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
