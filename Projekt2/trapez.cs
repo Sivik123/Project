@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projekt2.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace Projekt2
 {
     public partial class trapez : Form
     {
+        Image Trapez = Resources.Trapez; // zadeklarowanie obrazka
         public trapez()
         {
             InitializeComponent();
+            pictureBox1.Image = Trapez; 
         }
 
         private void button1_Click(object sender, EventArgs e)

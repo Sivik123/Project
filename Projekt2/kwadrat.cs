@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projekt2.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace Projekt2
 {
     public partial class kwadrat : Form
     {
+        Image Kwadrat = Resources.kwadrat; // zadeklarowanie obrazka
         public kwadrat()
         {
             InitializeComponent();
+            pictureBox1.Image = Kwadrat; 
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -48,6 +51,14 @@ namespace Projekt2
             double a;
             a = double.Parse(textBox3.Text);
             textBox4.Text = (a * Math.Sqrt(2)).ToString();
+        }
+
+        // Przycisk Powrot
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            figury f = new figury();
+            f.Show();
         }
 
     

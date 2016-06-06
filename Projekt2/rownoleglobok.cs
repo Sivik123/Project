@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projekt2.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace Projekt2
 {
     public partial class rownoleglobok : Form
     {
+        Image Rownleglobok = Resources.równloegłobok; // zadeklarowanie obrazka
         public rownoleglobok()
         {
             InitializeComponent();
+            pictureBox1.Image = Rownleglobok; 
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)

@@ -72,6 +72,13 @@ namespace Projekt2
             figury f = new figury();
             f.Show();
         }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            figury f = new figury();
+            f.Show();
+        }
         //
 
 

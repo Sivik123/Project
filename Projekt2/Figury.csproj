@@ -136,6 +136,21 @@
   <ItemGroup>
     <None Include="Resources\trójkąt.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prostokąt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kwadrat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\okrąg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\równloegłobok.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trapez.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

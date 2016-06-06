@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projekt2.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,12 @@ namespace Projekt2
 {
     public partial class prostokat : Form
     {
+        Image Prostokat = Resources.prostokąt; // zadeklarowanie obrazka
+       
         public prostokat()
         {
             InitializeComponent();
+            pictureBox1.Image = Prostokat;
         }
 
         private void button1_Click(object sender, EventArgs e)

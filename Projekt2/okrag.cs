@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projekt2.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace Projekt2
 {
     public partial class okrag : Form
     {
+        Image Okrag = Resources.okrąg; // zadeklarowanie obrazka
         public okrag()
         {
             InitializeComponent();
+            pictureBox1.Image = Okrag; 
         }
 
         private void button1_Click(object sender, EventArgs e)
