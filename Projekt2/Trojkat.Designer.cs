@@ -48,12 +48,16 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(255, 169);
+            this.button3.Location = new System.Drawing.Point(234, 50);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 56);
             this.button3.TabIndex = 0;
@@ -63,14 +67,14 @@
             // 
             // textBox42
             // 
-            this.textBox42.Location = new System.Drawing.Point(272, 225);
+            this.textBox42.Location = new System.Drawing.Point(251, 106);
             this.textBox42.Name = "textBox42";
             this.textBox42.Size = new System.Drawing.Size(35, 20);
             this.textBox42.TabIndex = 1;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(272, 251);
+            this.textBox5.Location = new System.Drawing.Point(251, 132);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(35, 20);
             this.textBox5.TabIndex = 2;
@@ -85,7 +89,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(252, 228);
+            this.label2.Location = new System.Drawing.Point(231, 109);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(20, 13);
             this.label2.TabIndex = 6;
@@ -94,7 +98,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(252, 258);
+            this.label3.Location = new System.Drawing.Point(231, 139);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(20, 13);
             this.label3.TabIndex = 7;
@@ -102,7 +106,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(255, 84);
+            this.button4.Location = new System.Drawing.Point(128, 50);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 56);
             this.button4.TabIndex = 8;
@@ -113,7 +117,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(252, 150);
+            this.label4.Location = new System.Drawing.Point(125, 116);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(20, 13);
             this.label4.TabIndex = 11;
@@ -130,15 +134,13 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(272, 147);
+            this.textBox4.Location = new System.Drawing.Point(145, 113);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(35, 20);
             this.textBox4.TabIndex = 16;
             // 
             // toolStrip1
             // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(380, 25);
@@ -157,7 +159,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(112, 150);
+            this.button5.Location = new System.Drawing.Point(31, 50);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(91, 56);
             this.button5.TabIndex = 18;
@@ -168,7 +170,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(109, 215);
+            this.label1.Location = new System.Drawing.Point(28, 115);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(20, 13);
             this.label1.TabIndex = 19;
@@ -177,7 +179,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(109, 241);
+            this.label6.Location = new System.Drawing.Point(28, 141);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(20, 13);
             this.label6.TabIndex = 20;
@@ -186,7 +188,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(109, 267);
+            this.label7.Location = new System.Drawing.Point(28, 167);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(20, 13);
             this.label7.TabIndex = 21;
@@ -194,28 +196,52 @@
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(135, 212);
+            this.textBox7.Location = new System.Drawing.Point(54, 112);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(35, 20);
             this.textBox7.TabIndex = 22;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(135, 238);
+            this.textBox8.Location = new System.Drawing.Point(54, 138);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(35, 20);
             this.textBox8.TabIndex = 23;
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(135, 264);
+            this.textBox9.Location = new System.Drawing.Point(54, 164);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(35, 20);
             this.textBox9.TabIndex = 24;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(238, 191);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(130, 100);
+            this.pictureBox1.TabIndex = 25;
+            this.pictureBox1.TabStop = false;
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(23, 23);
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton3.Text = "toolStripButton3";
+            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
+            // 
             // trojkat
             // 
             this.ClientSize = new System.Drawing.Size(380, 329);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
@@ -238,6 +264,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -269,6 +296,9 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
 
     }
 }

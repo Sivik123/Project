@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projekt2.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +13,14 @@ namespace Projekt2
 {
     public partial class trojkat : Form
     {
+        Image Trojkat = Resources.trójkąt; // zadeklarowanie obrazka
+        
         public trojkat()
         {
             InitializeComponent();
+            pictureBox1.Image = Trojkat; 
         }
+        // Przycisk Pole Trojkata prostokatnego
         private void button3_Click(object sender, EventArgs e)
         {
             double a, b;
@@ -24,6 +29,9 @@ namespace Projekt2
             
             textBox6.Text = (0.5 * (a * b)).ToString();    
         }
+        //
+
+        // Przycisk Pole Trojkata rownobocznego
         private void button4_Click(object sender, EventArgs e)
         {
                double a;
@@ -32,21 +40,20 @@ namespace Projekt2
           
            
         }
+        //
 
-        private void toolStripButton2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            figury f = new figury();
-            f.Show();
-        }
+     
 
+        
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
             this.Hide();
             figury f = new figury();
             f.Show();
         }
+        //
 
+        //
         private void button5_Click(object sender, EventArgs e)
         {
             double a,b,c;
@@ -56,9 +63,17 @@ namespace Projekt2
             textBox6.Text = (a+b+c).ToString();
         }
 
-  
 
- 
+
+        // Przycisk Powrotu
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            figury f = new figury();
+            f.Show();
+        }
+        //
+
 
      
 

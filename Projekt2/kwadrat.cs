@@ -50,11 +50,6 @@ namespace Projekt2
             textBox4.Text = (a * Math.Sqrt(2)).ToString();
         }
 
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            figury f = new figury();
-            f.Show();
-        }
+    
     }
 }
