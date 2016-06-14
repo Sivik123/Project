@@ -21,7 +21,7 @@ namespace Projekt2
             pictureBox1.Image = Prostokat;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void PoleProstokata(object sender, EventArgs e) // Przycisk Pola
         {
             double a,b;
             a = double.Parse(textBox1.Text);
@@ -29,7 +29,7 @@ namespace Projekt2
             textBox7.Text = (a * b).ToString();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void ObwodProstokata(object sender, EventArgs e) // Przycisk Obwodu
         {
             double a, b;
             a = double.Parse(textBox3.Text);
@@ -37,7 +37,7 @@ namespace Projekt2
             textBox7.Text = (2 * a + 2 * b).ToString();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void PrzekatnaProstokata(object sender, EventArgs e) // Przycisk Przekatna
         {
               double a, b;
             a = double.Parse(textBox5.Text);
@@ -45,10 +45,17 @@ namespace Projekt2
             textBox7.Text = ((Math.Sqrt(a * a + b * b)).ToString());
         }
 
-        private void toolStripButton1_Click(object sender, EventArgs e)
+        private void Wstecz(object sender, EventArgs e) // Przycisk Powrotu
         {
             this.Hide();
             figury f = new figury();
+            f.Show();
+        }
+
+        private void Dalej(object sender, EventArgs e) // Przycisk DoPrzodu
+        {
+            this.Hide();
+            trapez f = new trapez();
             f.Show();
         }
     }

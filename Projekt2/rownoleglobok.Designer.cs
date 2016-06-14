@@ -56,7 +56,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Pole";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.PoleRownolegloboku);
             // 
             // button2
             // 
@@ -66,7 +66,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Obwód";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.ObwodRownolegloboku);
             // 
             // label1
             // 
@@ -166,7 +166,7 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton1.Text = "toolStripButton1";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            this.toolStripButton1.Click += new System.EventHandler(this.Wstecz);
             // 
             // pictureBox1
             // 

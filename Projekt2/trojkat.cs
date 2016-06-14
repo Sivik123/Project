@@ -20,8 +20,8 @@ namespace Projekt2
             InitializeComponent();
             pictureBox1.Image = Trojkat; 
         }
-        // Przycisk Pole Trojkata prostokatnego
-        private void button3_Click(object sender, EventArgs e)
+
+        private void PoleTrójkątaProstokątnego(object sender, EventArgs e) // Przycisk Pole Trojkata prostokatnego
         {
             double a, b;
          a =  double.Parse(textBox42.Text);
@@ -29,10 +29,10 @@ namespace Projekt2
             
             textBox6.Text = (0.5 * (a * b)).ToString();    
         }
-        //
+       
+      
 
-        // Przycisk Pole Trojkata rownobocznego
-        private void button4_Click(object sender, EventArgs e)
+        private void PoleTrójkątaRównobocznego(object sender, EventArgs e) // Przycisk Pole Trojkata rownobocznego
         {
                double a;
          a =  double.Parse(textBox4.Text);
@@ -40,21 +40,12 @@ namespace Projekt2
           
            
         }
-        //
-
-     
-
         
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            figury f = new figury();
-            f.Show();
-        }
+ 
         //
 
         //
-        private void button5_Click(object sender, EventArgs e)
+        private void ObwódTrójkątówRóżnobocznych(object sender, EventArgs e) // Przycisk Obwód trojkatow roznobocznych
         {
             double a,b,c;
             a = double.Parse(textBox7.Text);
@@ -64,20 +55,19 @@ namespace Projekt2
         }
 
 
-
-        // Przycisk Powrotu
-        private void toolStripButton3_Click(object sender, EventArgs e)
+        private void Wstecz(object sender, EventArgs e) // Przycisk Powrotu
         {
             this.Hide();
             figury f = new figury();
             f.Show();
         }
 
-        private void toolStripButton4_Click(object sender, EventArgs e)
+        private void Dalej(object sender, EventArgs e) // Przycisk DoPrzodu
         {
             this.Hide();
-            figury f = new figury();
+            kwadrat f = new kwadrat();
             f.Show();
+
         }
         //
 

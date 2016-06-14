@@ -20,14 +20,14 @@ namespace Projekt2
             pictureBox1.Image = Rownleglobok; 
         }
 
-        private void toolStripButton1_Click(object sender, EventArgs e)
+        private void Wstecz(object sender, EventArgs e) // Przycisk powrotu
         {
             this.Hide();
             figury f = new figury();
             f.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void PoleRownolegloboku(object sender, EventArgs e) // Przycisk powrotu
         {
             double a,h;
             a = double.Parse(textBox1.Text);
@@ -35,7 +35,7 @@ namespace Projekt2
             textBox5.Text = (a * h).ToString();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void ObwodRownolegloboku(object sender, EventArgs e) // Przycisk obwodu
         {
             double a, b;
             a = double.Parse(textBox3.Text);

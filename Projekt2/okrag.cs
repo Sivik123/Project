@@ -20,7 +20,7 @@ namespace Projekt2
             pictureBox1.Image = Okrag; 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void PoleOkregu(object sender, EventArgs e) // Przycisk Pole
         {
             double r;
             double pi = Math.PI;
@@ -28,7 +28,7 @@ namespace Projekt2
             textBox3.Text = (pi * r).ToString(); 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void DlugoscOkregu(object sender, EventArgs e)// Przycisk Długość okręgu
         {
             double r;
             double pi = Math.PI;
@@ -37,10 +37,17 @@ namespace Projekt2
             textBox3.Text = ((2 * pi) * r).ToString(); 
         }
 
-        private void toolStripButton1_Click(object sender, EventArgs e)
+        private void Wstecz(object sender, EventArgs e) // Przycisk powrotu
         {
             this.Hide();
             figury f = new figury();
+            f.Show();
+        }
+
+        private void Dalej(object sender, EventArgs e) // Przycisk DoPrzodu
+        {
+            this.Hide();
+            prostokat f = new prostokat();
             f.Show();
         }
     }

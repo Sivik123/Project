@@ -20,7 +20,7 @@ namespace Projekt2
             pictureBox1.Image = Trapez; 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void PoleTrapezu(object sender, EventArgs e) // Przycisk Pole
         {
             double a,b,h;
             a = double.Parse(textBox1.Text);
@@ -29,7 +29,7 @@ namespace Projekt2
             textBox4.Text = (((a +b)*h)/2).ToString();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void ObwodTrapezu(object sender, EventArgs e) // Przycisk Obwod
         {
             double a, b, c, d;
             a = double.Parse(textBox5.Text);
@@ -40,10 +40,17 @@ namespace Projekt2
 
         }
 
-        private void toolStripButton1_Click(object sender, EventArgs e)
+        private void Wstecz(object sender, EventArgs e) // Przycisk powrotu
         {
             this.Hide();
             figury f = new figury();
+            f.Show();
+        }
+
+        private void Dalej(object sender, EventArgs e) // Przycisk DoPrzodu
+        {
+            this.Hide();
+            rownoleglobok f = new rownoleglobok();
             f.Show();
         }
     }

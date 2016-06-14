@@ -51,7 +51,7 @@
             this.button2.TabIndex = 0;
             this.button2.Text = "Trojkat";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.Trojkat);
             // 
             // button3
             // 
@@ -61,7 +61,7 @@
             this.button3.TabIndex = 1;
             this.button3.Text = "Kwadrat";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.Kwadrat);
             // 
             // button4
             // 
@@ -71,7 +71,7 @@
             this.button4.TabIndex = 2;
             this.button4.Text = "Prostokat";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.Okrag);
             // 
             // button5
             // 
@@ -81,7 +81,7 @@
             this.button5.TabIndex = 3;
             this.button5.Text = "Okrag";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Click += new System.EventHandler(this.Prostokat);
             // 
             // button6
             // 
@@ -91,7 +91,7 @@
             this.button6.TabIndex = 4;
             this.button6.Text = "Rownoleglobok";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.Click += new System.EventHandler(this.Trapez);
             // 
             // button7
             // 
@@ -101,7 +101,7 @@
             this.button7.TabIndex = 5;
             this.button7.Text = "Trapez";
             this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.button7.Click += new System.EventHandler(this.Rownoleglobok);
             // 
             // label1
             // 
@@ -138,21 +138,21 @@
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.helpToolStripMenuItem.Text = "Pomoc";
-            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.Pomoc);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.Exit);
             // 
             // oProgramieToolStripMenuItem
             // 
             this.oProgramieToolStripMenuItem.Name = "oProgramieToolStripMenuItem";
             this.oProgramieToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.oProgramieToolStripMenuItem.Text = "O Programie";
-            this.oProgramieToolStripMenuItem.Click += new System.EventHandler(this.oProgramieToolStripMenuItem_Click);
+            this.oProgramieToolStripMenuItem.Click += new System.EventHandler(this.OProgramie);
             // 
             // figury
             // 
