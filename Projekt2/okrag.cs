@@ -22,20 +22,55 @@ namespace Projekt2
 
         private void PoleOkregu(object sender, EventArgs e) // Przycisk Pole
         {
-            double r;
-            double pi = Math.PI;
-            r = double.Parse(textBox1.Text);
-            textBox3.Text = (pi * r).ToString(); 
+            try
+            {
+                double r;
+                double pi = Math.PI;
+                r = double.Parse(textBox1.Text);
+               
+
+                if (r < 0) // wyrzucenie własnego wyjatku
+                {
+                    throw new wyjatek();
+                }
+                else
+                {
+                    textBox3.Text = (pi * r).ToString();
+                }
+            }
+            catch (wyjatek wyj)
+            {
+                textBox3.Text = "Tylko dodatnie";
+            }
+            catch { textBox3.Text = "Wpisz Cyfre"; };
         }
+       
 
         private void DlugoscOkregu(object sender, EventArgs e)// Przycisk Długość okręgu
         {
-            double r;
-            double pi = Math.PI;
-            
-            r = double.Parse(textBox2.Text);
-            textBox3.Text = ((2 * pi) * r).ToString(); 
+            try
+            {
+                double r;
+                double pi = Math.PI;
+
+                r = double.Parse(textBox2.Text);
+                
+                if (r < 0) // wyrzucenie własnego wyjatku
+                {
+                    throw new wyjatek();
+                }
+                else
+                {
+                    textBox3.Text = ((2 * pi) * r).ToString();
+                }
+            }
+            catch (wyjatek wyj)
+            {
+                textBox3.Text = "Tylko dodatnie";
+            }
+            catch { textBox3.Text = "Wpisz Cyfre"; };
         }
+       
 
         private void Wstecz(object sender, EventArgs e) // Przycisk powrotu
         {
@@ -50,5 +85,12 @@ namespace Projekt2
             prostokat f = new prostokat();
             f.Show();
         }
+
+        private void okrag_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

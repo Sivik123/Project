@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Projekt2.figury">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQCAAAAAACAAABBQgACACAACAME7AAAAIgGAESAAAAA=</HashCode>
+      <FileName>figury.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Projekt2.kwadrat">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASAAAAAAACACABBAAEKAAFhWIBAwAAAIEBAAAgBAAAA=</HashCode>
+      <FileName>kwadrat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Projekt2.okrag">
+    <Position X="11" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASAAAAAAgCACABAAAECAAEhGAAAYAAAAEAEAAABAAEA=</HashCode>
+      <FileName>okrag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Projekt2.Program">
+    <Position X="4" Y="0.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Projekt2.prostokat">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QSgAAAAAASAAABiAAECAAEhGIAA4AAAAEADAAABAAAA=</HashCode>
+      <FileName>prostokat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Projekt2.rownoleglobok">
+    <Position X="2" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASAAAAAAASAAABAAAECgAGBCIAAYIAAQEAAAAABAAAA=</HashCode>
+      <FileName>rownoleglobok.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Projekt2.trapez">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QSAAAAAAASAAABCAAECAAEhGIAAYAAQAMAAAAABEAIA=</HashCode>
+      <FileName>trapez.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Projekt2.trojkat">
+    <Position X="9.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QSAAAAAAASAAABCAEEDACF5GIMA4IAAAEAAAAABAAIA=</HashCode>
+      <FileName>trojkat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Projekt2.wyjatek">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>wyjatek.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Projekt2.Properties.Resources">
+    <Position X="8" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAEAAACAIAAABEAAAAQAAAAAAIAAAAAAACIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Projekt2.Properties.Settings" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -198,6 +198,7 @@
             this.Name = "rownoleglobok";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "rownoleglobok";
+            this.Load += new System.EventHandler(this.rownoleglobok_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

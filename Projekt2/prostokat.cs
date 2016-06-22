@@ -23,26 +23,74 @@ namespace Projekt2
 
         private void PoleProstokata(object sender, EventArgs e) // Przycisk Pola
         {
-            double a,b;
-            a = double.Parse(textBox1.Text);
-            b = double.Parse(textBox2.Text);
-            textBox7.Text = (a * b).ToString();
+            try
+            {
+                double a, b;
+                a = double.Parse(textBox1.Text);
+                b = double.Parse(textBox2.Text);
+                
+                if (a < 0 | b < 0) // wyrzucenie własnego wyjatku
+                {
+                    throw new wyjatek();
+                }
+                else
+                {
+                    textBox7.Text = (a * b).ToString();
+                }
+            }
+            catch (wyjatek wyj)
+            {
+                textBox7.Text = "Tylko dodatnie";
+            }
+            catch { textBox7.Text = "Wpisz Cyfre"; };
         }
 
         private void ObwodProstokata(object sender, EventArgs e) // Przycisk Obwodu
         {
-            double a, b;
-            a = double.Parse(textBox3.Text);
-            b = double.Parse(textBox4.Text);
-            textBox7.Text = (2 * a + 2 * b).ToString();
+            try
+            {
+                double a, b;
+                a = double.Parse(textBox3.Text);
+                b = double.Parse(textBox4.Text);
+               
+                if (a < 0 | b < 0) // wyrzucenie własnego wyjatku
+                {
+                    throw new wyjatek();
+                }
+                else
+                {
+                    textBox7.Text = (2 * a + 2 * b).ToString();
+                }
+            }
+            catch (wyjatek wyj)
+            {
+                textBox7.Text = "Tylko dodatnie";
+            }
+            catch { textBox7.Text = "Wpisz Cyfre"; };
         }
 
         private void PrzekatnaProstokata(object sender, EventArgs e) // Przycisk Przekatna
         {
-              double a, b;
-            a = double.Parse(textBox5.Text);
-            b = double.Parse(textBox6.Text);
-            textBox7.Text = ((Math.Sqrt(a * a + b * b)).ToString());
+            try
+            {
+                double a, b;
+                a = double.Parse(textBox5.Text);
+                b = double.Parse(textBox6.Text);
+               
+                if (a < 0 | b < 0) // wyrzucenie własnego wyjatku
+                {
+                    throw new wyjatek();
+                }
+                else
+                {
+                    textBox7.Text = ((Math.Sqrt(a * a + b * b)).ToString());
+                }
+            }
+            catch (wyjatek wyj)
+            {
+                textBox7.Text = "Tylko dodatnie";
+            }
+            catch { textBox7.Text = "Wpisz Cyfre"; };
         }
 
         private void Wstecz(object sender, EventArgs e) // Przycisk Powrotu
@@ -58,5 +106,7 @@ namespace Projekt2
             trapez f = new trapez();
             f.Show();
         }
+
+  
     }
 }

@@ -37,15 +37,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.plikToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oProgramieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(40, 27);
+            this.button2.Location = new System.Drawing.Point(43, 52);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(69, 59);
             this.button2.TabIndex = 0;
@@ -55,7 +56,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(267, 27);
+            this.button3.Location = new System.Drawing.Point(270, 52);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(69, 59);
             this.button3.TabIndex = 1;
@@ -65,7 +66,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(267, 132);
+            this.button4.Location = new System.Drawing.Point(270, 157);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(69, 60);
             this.button4.TabIndex = 2;
@@ -75,7 +76,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(40, 132);
+            this.button5.Location = new System.Drawing.Point(43, 157);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(69, 60);
             this.button5.TabIndex = 3;
@@ -85,7 +86,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(267, 232);
+            this.button6.Location = new System.Drawing.Point(270, 257);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(69, 60);
             this.button6.TabIndex = 4;
@@ -95,7 +96,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(40, 232);
+            this.button7.Location = new System.Drawing.Point(43, 257);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(69, 60);
             this.button7.TabIndex = 5;
@@ -131,6 +132,13 @@
             this.plikToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
             this.plikToolStripMenuItem.Text = "Plik";
             // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.Exit);
+            // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -140,23 +148,29 @@
             this.helpToolStripMenuItem.Text = "Pomoc";
             this.helpToolStripMenuItem.Click += new System.EventHandler(this.Pomoc);
             // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.Exit);
-            // 
             // oProgramieToolStripMenuItem
             // 
             this.oProgramieToolStripMenuItem.Name = "oProgramieToolStripMenuItem";
-            this.oProgramieToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.oProgramieToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.oProgramieToolStripMenuItem.Text = "O Programie";
             this.oProgramieToolStripMenuItem.Click += new System.EventHandler(this.OProgramie);
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label2.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(151, 37);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 30);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "WYBIERZ    FIGURE";
             // 
             // figury
             // 
             this.ClientSize = new System.Drawing.Size(380, 329);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button7);
@@ -191,6 +205,7 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem oProgramieToolStripMenuItem;
+        private System.Windows.Forms.Label label2;
     }
 }
 

@@ -13,6 +13,8 @@ namespace Projekt2
 {
     public partial class trojkat : Form
     {
+        
+        
         Image Trojkat = Resources.trójkąt; // zadeklarowanie obrazka
         
         public trojkat()
@@ -23,23 +25,52 @@ namespace Projekt2
 
         private void PoleTrójkątaProstokątnego(object sender, EventArgs e) // Przycisk Pole Trojkata prostokatnego
         {
-            double a, b;
-         a =  double.Parse(textBox42.Text);
-            b = double.Parse(textBox5.Text);
-            
-            textBox6.Text = (0.5 * (a * b)).ToString();    
+            try
+            {
+                double a, b;
+                a = double.Parse(textBox42.Text);
+                b = double.Parse(textBox5.Text);
+                
+                if (a < 0 | b < 0) // wyrzucenie własnego wyjatku
+                {
+                    throw new wyjatek();
+                }
+                else
+                {
+                    textBox6.Text = (0.5 * (a * b)).ToString();
+                }
+            }
+            catch (wyjatek wyj)
+            {
+                textBox6.Text = "Tylko dodatnie";
+            }
+            catch { textBox6.Text = "Wpisz Cyfre"; };
         }
        
       
 
         private void PoleTrójkątaRównobocznego(object sender, EventArgs e) // Przycisk Pole Trojkata rownobocznego
-        {
-               double a;
-         a =  double.Parse(textBox4.Text);
-         textBox6.Text = ((a * a) * Math.Sqrt(3) / 4).ToString();
-          
-           
-        }
+         {
+             try
+             {
+                 double a;
+                 a = double.Parse(textBox4.Text);
+                 
+                 if (a < 0 ) // wyrzucenie własnego wyjatku
+                 {
+                     throw new wyjatek();
+                 }
+                 else
+                 {
+                     textBox6.Text = ((a * a) * Math.Sqrt(3) / 4).ToString();
+                 }
+             }
+             catch (wyjatek wyj)
+             {
+                 textBox6.Text = "Tylko dodatnie";
+             }
+             catch { textBox6.Text = "Wpisz Cyfre"; };
+         }
         
  
         //
@@ -47,12 +78,30 @@ namespace Projekt2
         //
         private void ObwódTrójkątówRóżnobocznych(object sender, EventArgs e) // Przycisk Obwód trojkatow roznobocznych
         {
-            double a,b,c;
-            a = double.Parse(textBox7.Text);
-            b = double.Parse(textBox8.Text);
-            c = double.Parse(textBox9.Text);
-            textBox6.Text = (a+b+c).ToString();
+
+            try
+            {
+                double a, b, c;
+                a = double.Parse(textBox7.Text);
+                b = double.Parse(textBox8.Text);
+                c = double.Parse(textBox9.Text);
+                
+                if (a < 0 | b < 0 | c < 0) // wyrzucenie własnego wyjatku
+                {
+                    throw new wyjatek();
+                }
+                else
+                {
+                    textBox6.Text = (a + b + c).ToString();
+                }
+            }
+            catch (wyjatek wyj)
+            {
+                textBox6.Text = "Tylko dodatnie";
+            }
+            catch { textBox6.Text = "Wpisz Cyfre"; };
         }
+
 
 
         private void Wstecz(object sender, EventArgs e) // Przycisk Powrotu
@@ -69,10 +118,7 @@ namespace Projekt2
             f.Show();
 
         }
-        //
-
-
-     
+        }
 
     }
-}
+

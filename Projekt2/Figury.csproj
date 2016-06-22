@@ -88,6 +88,7 @@
     <Compile Include="trojkat.Designer.cs">
       <DependentUpon>trojkat.cs</DependentUpon>
     </Compile>
+    <Compile Include="wyjatek.cs" />
     <EmbeddedResource Include="figury.resx">
       <DependentUpon>figury.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +121,7 @@
       <DependentUpon>trojkat.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram4.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
